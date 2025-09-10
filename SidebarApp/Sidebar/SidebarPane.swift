@@ -2,14 +2,9 @@ import Foundation
 
 enum SidebarPane {
     
-    // MARK: General Section
+    // MARK: Lists / General Section
 
-    case helloWorld
-    case whatsUp
-    
-    // MARK: More Section
-    
-    case moreStuff
+    case todoList
 }
 
 // MARK: - Protocol Conformances

@@ -15,7 +15,6 @@ struct Sidebar: View {
     var body: some View {
         List {
             GeneralSidebarSection(selection: $selection)
-            MoreSidebarSection(selection: $selection)
         }
         .listStyle(SidebarListStyle())
         .frame(minWidth: 180, idealWidth: 180, maxWidth: 300)
