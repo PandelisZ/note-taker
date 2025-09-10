@@ -7,24 +7,18 @@ struct GeneralSidebarSection: View {
     var body: some View {
         
         Section(header: Text("General")) {
-			
-			NavigationLink {
-				HelloWorldPane()
-			} label: {
-				Label("Hello, World!", systemImage: "text.bubble")
-			}
-			
-			NavigationLink {
-				WhatsUpPane()
-			} label: {
-				Label("What's Up?", systemImage: "questionmark.app.dashed")
-			}
+            
+            NavigationLink {
+                TodoListPane()
+            } label: {
+                Label("To‑Do List", systemImage: "list.bullet")
+            }
         }
     }
 }
 
 struct GeneralSidebarSection_Previews: PreviewProvider {
     static var previews: some View {
-        GeneralSidebarSection(selection: .constant(.helloWorld))
+        GeneralSidebarSection(selection: .constant(.todoList))
     }
 }
